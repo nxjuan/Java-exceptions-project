@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\temp\Java_Project_Exceptions_handling_Exercise\.metadata\.plugins\org.eclipse.jdt.core
+2840903797.index
+1865797976.index
+3325237518.index

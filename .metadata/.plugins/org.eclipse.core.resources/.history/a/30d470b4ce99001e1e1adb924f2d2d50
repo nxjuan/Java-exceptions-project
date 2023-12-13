@@ -1,0 +1,35 @@
+package programs;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import models.entities.Account;
+
+public class Aplication {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		Locale.setDefault(Locale.US);
+		
+		// Instanciando as variaveis temporarias que vão alimentar o construtor
+		System.out.println("Enter account data:");
+		System.out.print("Number: ");
+		int number = sc.nextInt();
+		System.out.print("Holder: ");
+		String holder = sc.next();
+		System.out.print("Initial balance: ");
+		double balance = sc.nextDouble();
+		System.out.print("Withdraw limit: ");
+		double withdrawLimit = sc.nextDouble();
+		
+		// Instanciando o objeto
+		Account account = new Account(number, holder, balance, withdrawLimit);
+		
+		System.out.print("Enter amount for a withdraw: ");
+		double withdraw = sc.nextDouble();
+		
+		sc.close();
+	}
+
+}
